@@ -14,7 +14,7 @@ RUN curl -sL -o oauth2_proxy.tar.gz \
   && rm -r oauth2_proxy*
 
 # Copy static files
-ADD ./static .
+ADD ./static ./static
 ADD oauth2_proxy.cfg .
 WORKDIR .
 
